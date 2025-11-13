@@ -4,92 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects | Raisa Raihan Prithwi</title>
-
-  <!-- CSS and Animation -->
   <link rel="stylesheet" href="portfolio.css">
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
+<body>
 
-<body class="projects-page">
-  <div class="projects-container animate__animated animate__fadeInUp" data-aos="fade-up">
+  <!-- Projects Section -->
+  <section class="projects-page">
+    <div class="projects-container">
 
-    <h1>My Projects</h1>
+      <h1 class="section-title">My Projects</h1>
 
-    <!-- Dengue Dataset Project -->
-    <div class="project-card" data-aos="zoom-in" data-aos-delay="150">
-      <h2>🦟 Dengue Dataset Analysis</h2>
-      <p>
-        This project focuses on analyzing a Dengue dataset using Python in Google Colab.  
-        It involves **data cleaning, visualization, feature encoding**, and **Linear Regression modeling** to predict outcomes.
-      </p>
+      <!-- Dengue Data Analysis Project -->
+      <div class="project-card">
+        <img src="images/dengue-data-analysis.jpg" alt="Dengue Data Analysis Project" class="project-image">
+        
+        <div class="project-content">
+          <h2 class="project-title">Dengue Data Analysis</h2>
+          <p class="project-description">
+            My first data analysis project based on dengue dataset exploration. 
+            This project focuses on understanding data patterns, performing correlation analysis, 
+            and visualizing insights using Python libraries such as Pandas, Matplotlib, and Seaborn.
+          </p>
 
-      <!-- Project Image -->
-      <img src="dengue_heatmap.png" alt="Correlation Heatmap Preview" class="project-image">
-
-      <!-- Workflow -->
-      <h3>Workflow Steps</h3>
-      <ul class="project-steps">
-        <li>📁 Loaded and cleaned dengue dataset</li>
-        <li>📊 Analyzed numeric and categorical variables</li>
-        <li>📈 Visualized correlations and distributions</li>
-        <li>🤖 Built and tested a Linear Regression model</li>
-        <li>📉 Evaluated model with MSE and R² metrics</li>
-      </ul>
-
-      <!-- Results Table -->
-      <h3>Model Results</h3>
-      <table class="results-table">
-        <tr>
-          <th>Metric</th>
-          <th>Training</th>
-          <th>Test</th>
-        </tr>
-        <tr>
-          <td>Mean Squared Error (MSE)</td>
-          <td>0.015</td>
-          <td>0.022</td>
-        </tr>
-        <tr>
-          <td>R² Score</td>
-          <td>0.91</td>
-          <td>0.88</td>
-        </tr>
-      </table>
-
-      <!-- Key Insights -->
-      <div class="insights">
-        <h3>Key Insights</h3>
-        <ul>
-          <li>Humidity and temperature strongly influence dengue outcomes.</li>
-          <li>Urban areas show higher infection likelihood than rural ones.</li>
-          <li>Model achieved strong predictive performance (R² ≈ 0.88).</li>
-        </ul>
+          <div class="project-buttons">
+            <a href="https://github.com/Prithwiii/Dengue_Data_Analysis" target="_blank" class="btn">View on GitHub</a>
+            <a href="https://colab.research.google.com/drive/1UuQTKzc-ezhLBUeB38_HHXSBYy_YCIGk" target="_blank" class="btn secondary-btn">Open Notebook</a>
+          </div>
+        </div>
       </div>
 
-      <!-- Project Links -->
-      <div class="project-links">
-        <a href="https://colab.research.google.com/drive/1UuQTKzc-ezhLBUeB38_HHXSBYy_YCIGk"
-           target="_blank" class="project-link">🔗 View in Google Colab</a>
-        <a href="https://github.com/Prithwiii"
-           target="_blank" class="project-link">💻 View on GitHub</a>
-      </div>
     </div>
+  </section>
 
-    <!-- More Projects / Footer -->
-    <div class="more-projects" data-aos="fade-up" data-aos-delay="200">
-      <p>✨ Check out more of my projects on 
-         <a href="https://github.com/Prithwiii" target="_blank">GitHub</a>!</p>
-    </div>
-
-    <a href="index.html" class="back-button">← Back to Home</a>
-  </div>
-
-  <!-- Animation on Scroll -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
 </body>
 </html>
