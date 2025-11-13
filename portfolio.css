@@ -405,4 +405,64 @@ body{
         padding-right: 15px;
     }
 }
+/* ------------------- NAVBAR STYLING ------------------- */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; /* allows buttons to wrap on small screens */
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* Make buttons fully responsive */
+.button-container button {
+    padding: 10px 15px;
+    font-size: 16px;
+    min-width: 120px;
+}
+
+/* ------------------- HERO SECTION RESPONSIVE ------------------- */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .text-container {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .floating-image {
+        max-width: 250px;
+        height: auto;
+    }
+
+    .floating-text {
+        font-size: 50px;
+    }
+
+    .floating-text1 {
+        font-size: 40px;
+    }
+
+    /* Buttons stack vertically on smaller screens */
+    .button-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .button-container button {
+        width: 100%;
+        max-width: 250px;
+    }
+}
+
+/* ------------------- GENERAL FIX ------------------- */
+body {
+    overflow-x: hidden; /* prevent horizontal scroll */
+}
 
